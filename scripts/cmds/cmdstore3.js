@@ -1,24 +1,24 @@
-const { GoatWrapper } = require("fca-liane-utils");
 const axios = require("axios");
-const availableCmdsUrl = "https://raw.githubusercontent.com/Blankid018/D1PT0/main/availableCmds.json";
-const cmdUrlsJson = "https://raw.githubusercontent.com/Blankid018/D1PT0/main/cmdUrls.json";
+const availableCmdsUrl = "https://raw.githubusercontent.com/mahmudx7/exe/main/CMDSRUL.json";
+const cmdUrlsJson = "https://raw.githubusercontent.com/mahmudx7/exe/main/CMDS.json";
 const ITEMS_PER_PAGE = 10;
 
 module.exports.config = {
-  name: "cmdstore",
-  aliases: ["cs", "cmds"],
-  author: "Dipto",
+  name: "cmdstore3",
+  aliases: ["cmds3", "cs3"],
+  author: "MahMUD",
   role: 2,
-  version: "6.9",
+  version: "1.7",
   description: {
-    en: "Commands Store of Dipto",
+    en: "Commands Store of MahMUD",
   },
   countDown: 3,
-  category: "goatbot",
+  category: "general",
   guide: {
     en: "{pn} [command name | single character | page number]",
   },
 };
+
 module.exports.onStart = async function ({ api, event, args }) {
   const query = args.join(" ").trim().toLowerCase();
   try {
@@ -55,20 +55,20 @@ module.exports.onStart = async function ({ api, event, args }) {
     const startIndex = (page - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const cmdsToShow = finalArray.slice(startIndex, endIndex);
-    let msg = `╭───✦ Cmd Store ✦───╮\n│ Page ${page} of ${totalPages} page(s)\n│ Total ${finalArray.length} commands\n`;
-    cmdsToShow.forEach((cmd, index) => {
-      msg += `│ ───✦ ${startIndex + index + 1}. ${cmd.cmd}\n│ AUTHOR: ${cmd.author}\n│ UPDATE: ${cmd.update || null}\n`;
-    });
-    msg += `╰─────────────⧕`;
 
-    if (page < totalPages) {
-      msg += `\nType "${this.config.name} ${page + 1}" for more commands.`;
-    }
+    let msg = `╭─‣ 𝐇𝐢𝐧𝐚𝐭𝐚 𝐒𝐭𝐨𝐫𝐞 🎀\n├‣ 𝐀𝐝𝐦𝐢𝐧: 𝐌𝐚𝐡𝐌𝐔𝐃\n├‣ 𝐓𝐨𝐭𝐚𝐥 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬: ${finalArray.length}\n╰────────────◊\n`;
+
+    cmdsToShow.forEach((cmd, index) => {
+      msg += `╭─‣ ${startIndex + index + 1}: ${cmd.cmd}\n├‣ Author: ${cmd.author}\n├‣ Update: ${cmd.update}\n╰────────────◊\n`;
+    });
+
+    msg += `\n📄 | 𝐏𝐚𝐠𝐞 [${page}-${totalPages}]\nℹ | 𝐓𝐲𝐩𝐞 !cmds ${page + 1} - 𝐭𝐨 𝐬𝐞𝐞 𝐧𝐞𝐱𝐭 𝐩𝐚𝐠𝐞.`;
+
     api.sendMessage(
       msg,
       event.threadID,
       (error, info) => {
-global.GoatBot.onReply.set(info.messageID, {
+        global.GoatBot.onReply.set(info.messageID, {
           commandName: this.config.name,
           type: "reply",
           messageID: info.messageID,
@@ -79,7 +79,6 @@ global.GoatBot.onReply.set(info.messageID, {
       },
       event.messageID
     );
-    console.log(finalArray)
   } catch (error) {
     api.sendMessage(
       "🦆 | Failed to retrieve commands.",
@@ -90,9 +89,8 @@ global.GoatBot.onReply.set(info.messageID, {
 };
 
 module.exports.onReply = async function ({ api, event, Reply }) {
-
   if (Reply.author != event.senderID) {
-    return api.sendMessage("Who are you? 🦆", event.threadID, event.messageID);
+    return api.sendMessage("Error", event.threadID, event.messageID);
   }
   const reply = parseInt(event.body);
   const startIndex = (Reply.page - 1) * ITEMS_PER_PAGE;
@@ -106,8 +104,7 @@ module.exports.onReply = async function ({ api, event, Reply }) {
     );
   }
   try {
-  const cmdName = Reply.cmdName[reply - 1].cmd
-const  { status }  = Reply.cmdName[reply - 1]
+    const cmdName = Reply.cmdName[reply - 1].cmd;
     const response = await axios.get(cmdUrlsJson);
     const selectedCmdUrl = response.data[cmdName];
     if (!selectedCmdUrl) {
@@ -118,7 +115,7 @@ const  { status }  = Reply.cmdName[reply - 1]
       );
     }
     api.unsendMessage(Reply.messageID);
-    const msg = `╭───────⭓\n│ STATUS :${status || null}\n│ Command Url: ${selectedCmdUrl}\n╰─────────────⭓`;
+    const msg = `╭────────◊\n├‣ Command URL: ${selectedCmdUrl}\n╰─────────────◊`;
     api.sendMessage(msg, event.threadID, event.messageID);
   } catch (error) {
     api.sendMessage(
@@ -128,5 +125,3 @@ const  { status }  = Reply.cmdName[reply - 1]
     );
   }
 };
-const wrapper = new GoatWrapper(module.exports);
-wrapper.applyNoPrefix({ allowPrefix: true });
