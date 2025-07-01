@@ -81,37 +81,37 @@ loadScripts.NOT_FOUND=NOT FOUND IN THE ORIGINAL SOURCE CODE:
 loadScripts.NOT_MATCH=DOES NOT MATCH THE ORIGINAL SOURCE CODE:
 
 # bot/login/socketIO.js
-socketIO.connected= 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝚃𝙾 𝚂𝙾𝙲𝙺𝙴𝚃.𝙸𝙾 𝚂𝙴𝚁𝚅𝙴𝚁Connected to socket.io server
-socketIO.error= 𝙰𝚗 𝙴𝚁𝚁𝙾𝚁 𝙾𝙲𝙲𝚄𝚁𝚁𝙴𝙳 𝚆𝙷𝙴𝙽 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙽𝙶 𝚃𝙾 𝚃𝙷𝙴 𝚂𝙾𝙲𝙺𝙴𝚃.𝙸𝙾 𝚂𝙴𝚁𝚅𝙴𝚁
+socketIO.connected=Connected to socket.io server
+socketIO.error=An error occurred when connecting to the socket.io server
 
 # bot/handler/handlerCheckData.js
-handlerCheckData.cantCreateThread=𝙶𝚁𝙾𝚄𝙿𝚂 𝚆𝙸𝚃𝙷 𝙸𝙳 '%1' 𝙲𝙰𝙽𝙽𝙾𝚃 𝙱𝙴 𝚆𝚁𝙸𝚃𝚃𝙴𝙽 𝚃𝙾 𝚃𝙷𝙴 𝙽𝙸𝚂𝙰𝙽 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 !
-handlerCheckData.cantCreateUser=𝚄𝚂𝙴𝚁 𝚆𝙸𝚃𝙷 𝙸𝙳 '%1'  𝙲𝙰𝙽𝙽𝙾𝚃 𝙱𝙴 𝚆𝚁𝙸𝚃𝚃𝙴𝙽 𝚃𝙾 𝚃𝙷𝙴 𝙽𝙸𝚂𝙰𝙽 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴!
+handlerCheckData.cantCreateThread=Groups with id '%1' cannot be written to the database!
+handlerCheckData.cantCreateUser=Users with id '%1' cannot be written to the database!
 
 # bot/handler/handlerEvents.js
-handlerEvents.userBanned=𝙔𝙤𝙪 𝙝𝙖𝙫𝙚 𝙗𝙚𝙚𝙣 𝙗𝙖𝙣𝙣𝙚𝙙 𝙛𝙧𝙤𝙢 𝙪𝙨𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩\n» 𝙍𝙚𝙖𝙨𝙤𝙣: %1\n» 𝙏𝙞𝙢𝙚: %2\n» 𝙐𝙨𝙚𝙧 𝙄𝘿: %3
-handlerEvents.threadBanned=𝙏𝙝𝙞𝙨 𝙜𝙧𝙤𝙪𝙥 𝙝𝙖𝙨 𝙗𝙚𝙚𝙣 𝙗𝙖𝙣𝙣𝙚𝙙 𝙛𝙧𝙤𝙢 𝙪𝙨𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩\n» 𝙍𝙚𝙖𝙨𝙤𝙣: %1\n» 𝙏𝙞𝙢𝙚: %2\n» 𝙏𝙝𝙧𝙚𝙖𝙙 𝙄𝘿: %3
-handlerEvents.onlyAdminBox=🦆𝙏𝙝𝙞𝙨 𝙜𝙧𝙤𝙪𝙥 𝙞𝙨 𝙘𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙚𝙣𝙖𝙗𝙡𝙚𝙙 𝙤𝙣𝙡𝙮 𝙜𝙧𝙤𝙪𝙥 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙩𝙤𝙧𝙨 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙗𝙤𝙩 🦆🍫
-handlerEvents.onlyAdminBot=🦆 | 𝘾𝙪𝙧𝙧𝙚𝙣𝙩𝙡𝙮 𝙤𝙣𝙡𝙮 𝙗𝙤𝙩'𝙨 𝙖𝙙𝙢𝙞𝙣 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙗𝙤𝙩 🦆🍫
-handlerEvents.commandNotFound=🦆𝘾𝙤𝙢𝙢𝙖𝙣𝙙 "%1" 𝙙𝙤𝙚𝙨 𝙣𝙤𝙩 𝙚𝙭𝙞𝙨𝙩, 𝙩𝙮𝙥𝙚 %2𝙝𝙚𝙡𝙥 🦆 𝙩𝙤 𝙨𝙚𝙚👀 𝙖𝙡𝙡 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙🦆🍫
-handlerEvents.commandNotFound2=🦆𝙏𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙮𝙤𝙪 𝙖𝙧𝙚 𝙪𝙨𝙞𝙣𝙜 𝙙𝙤𝙚𝙨 𝙣𝙤𝙩 𝙚𝙭𝙞𝙨𝙩, 𝙩𝙮𝙥𝙚 %1𝙝𝙚𝙡𝙥 𝙩𝙤 𝙨𝙚𝙚👀 𝙖𝙡𝙡 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨🦆🍫
-handlerEvents.commandSyntaxError=🦆𝙏𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙮𝙤𝙪 𝙖𝙧𝙚 𝙪𝙨𝙞𝙣𝙜 𝙞𝙨 𝙬𝙧𝙤𝙣𝙜 𝙨𝙮𝙣𝙩𝙖𝙭, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙩𝙮𝙥𝙚 %1𝙝𝙚𝙡𝙥 %2 𝙩𝙤 𝙨𝙚𝙚 𝙩𝙝𝙚 𝙙𝙚𝙩𝙖𝙞𝙡𝙨 𝙤𝙛 𝙝𝙤𝙬 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙘𝙤𝙢𝙢𝙖𝙣𝙙🦆🍫
-handlerEvents.onlyAdmin=🦆 | 𝙊𝙣𝙡𝙮 𝙜𝙧𝙤𝙪𝙥 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙩𝙤𝙧𝙨🦆🍫 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%1"
-handlerEvents.onlyAdminToUseOnReply=🦆 | 𝙊𝙣𝙡𝙮 𝙜𝙧𝙤𝙪𝙥 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙩𝙤𝙧𝙨🦆🍫 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙧𝙚𝙥𝙡𝙮 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣 𝙤𝙛 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%1"
-handlerEvents.onlyAdminToUseOnReaction=🦆 | 𝙊𝙣𝙡𝙮 𝙜𝙧𝙤𝙪𝙥 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙩𝙤𝙧𝙨🦆🍫 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙧𝙚𝙖𝙘𝙩𝙞𝙤𝙣 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣 𝙤𝙛 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%1"
-handlerEvents.onlyAdminBot2=🦆 | 𝙊𝙣𝙡𝙮 𝙗𝙤𝙩'𝙨 𝙖𝙙𝙢𝙞𝙣 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙🦆🍫 "%1"
-handlerEvents.onlyAdminBot2ToUseOnReply=🦆 | 𝙊𝙣𝙡𝙮 𝙗𝙤𝙩'𝙨 𝙖𝙙𝙢𝙞𝙣 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙧𝙚𝙥𝙡𝙮 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣 𝙤𝙛 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙🦆🍫 "%1"
-handlerEvents.onlyAdminBot2ToUseOnReaction=🦆 | 𝙊𝙣𝙡𝙮 𝙗𝙤𝙩'𝙨 𝙖𝙙𝙢𝙞𝙣 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙚 𝙧𝙚𝙖𝙘𝙩𝙞𝙤𝙣 𝙛𝙪𝙣𝙘𝙩𝙞𝙤𝙣 𝙤𝙛 𝙩𝙝𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙🦆🍫 "%1"
-handlerEvents.waitingForCommand=🦆⌛ 𝙔𝙤𝙪 𝙖𝙧𝙚 𝙞𝙣 𝙩𝙝𝙚 𝙬𝙖𝙞𝙩𝙞𝙣𝙜 𝙩𝙞𝙢𝙚 𝙩𝙤 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙘𝙤𝙢𝙢𝙖𝙣𝙙, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙘𝙤𝙢𝙚 𝙗𝙖𝙘𝙠 𝙖𝙛𝙩𝙚𝙧 %1s
-handlerEvents.errorOccurred=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred2=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙤𝙣𝘾𝙝𝙖𝙩 𝙞𝙣 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred3=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙣𝙜 𝙤𝙣𝙍𝙚𝙥𝙡𝙮 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred4=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙣𝙜 𝙤𝙣𝙍𝙚𝙖𝙘𝙩𝙞𝙤𝙣 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred5=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙣𝙜 𝙤𝙣𝙀𝙫𝙚𝙣𝙩 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred6=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙣𝙜 𝙤𝙣𝙀𝙫𝙚𝙣𝙩 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.errorOccurred7=🦆 [ %1 ]\n𝘼𝙣 𝙚𝙧𝙧𝙤𝙧 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙞𝙣𝙜 𝙤𝙣𝙀𝙫𝙚𝙣𝙩 𝙖𝙩 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 "%2"\n\n%3
-handlerEvents.cannotFindCommandName=🦆 𝘾𝙖𝙣𝙣𝙤𝙩 𝙛𝙞𝙣𝙙 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 𝙣𝙖𝙢𝙚 𝙩𝙤 𝙚𝙭𝙚𝙘𝙪𝙩𝙚 𝙩𝙝𝙞𝙨 𝙧𝙚𝙥𝙡𝙮! 🦆🍫
-handlerEvents.cannotFindCommand=🦆 𝘾𝙖𝙣𝙣𝙤𝙩 𝙛𝙞𝙣𝙙 𝙘𝙤𝙢𝙢𝙖𝙣𝙙 " %1" 𝙩𝙤 𝙚𝙭𝙚𝙘𝙪𝙩𝙚 𝙩𝙝𝙞𝙨 𝙧𝙚𝙥𝙡𝙮! 🦆🍫
+handlerEvents.userBanned=You have been banned from using the bot\n» Reason: %1\n» Time: %2\n» User ID: %3
+handlerEvents.threadBanned=This group has been banned from using the bot\n» Reason: %1\n» Time: %2\n» Thread ID: %3
+handlerEvents.onlyAdminBox=This group is currently enabled only group administrators can use the bot
+handlerEvents.onlyAdminBot=❌ | Currently only bot's admin can use bot
+handlerEvents.commandNotFound=Command "%1" does not exist, type %2help to see all available commands
+handlerEvents.commandNotFound2=The command you are using does not exist, type %1help to see all available commands
+handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
+handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1"
+handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1"
+handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1"
+handlerEvents.onlyAdminBot2=❌ | Only bot's admin can use the command "%1"
+handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
+handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
+handlerEvents.waitingForCommand=⏱ You are in the waiting time to use this command, please come back after %1s
+handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
+handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
+handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
+handlerEvents.errorOccurred4=❌ [ %1 ]\nAn error occurred when executing onReaction at command "%2"\n\n%3
+handlerEvents.errorOccurred5=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
+handlerEvents.errorOccurred6=❌ [ %1 ]\nAn error occurred when executing onEvent at command "%2"\n\n%3
+handlerEvents.errorOccurred7=❌ [ %1 ]\nAn error occurred when executing onAnyEvent at command "%2"\n\n%3
+handlerEvents.cannotFindCommandName=❌ Cannot find command name to execute this reply!
+handlerEvents.cannotFindCommand=❌ Cannot find command "%1" to execute this reply!
 
 # bot/autoUptime.js
 autoUptime.autoUptimeTurnedOn=AutoUptime mode turned on
@@ -141,7 +141,7 @@ updater.skipFile=There is a new version of the %1 file, but you have skipped thi
 verifyfbid.sendCode=Your verification code is:\n%1\nThe verification code is valid for %2 minutes
 
 # utils.js
-utils.errorOccurred= An error occurred:\n\n%1
+utils.errorOccurred=❌ An error occurred:\n\n%1
 
 # for command
 command.restartedBot=Bot has been restarted
