@@ -7,7 +7,7 @@ module.exports.config = {
   name: "cmdstore6",
   aliases: ["cs6", "cmds6"],
   author: "ARYAN 🐔",
-  role: 0,
+  role: 2,
   version: "0.1",
   description: {
     en: "Commands Store of ArYan",
