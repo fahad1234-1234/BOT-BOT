@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 const config = {
-  name: "gemini",
-  aliases: ["gemi", "gptgemini"],
+  name: "gemini2",
+  aliases: ["gemi2", "gptgemini2"],
   description: "Ask Cat-X Gemini AI anything",
   category: "ai",
   usage: "<your question>",
