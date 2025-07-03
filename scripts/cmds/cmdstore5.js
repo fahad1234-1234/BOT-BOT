@@ -5,7 +5,7 @@ const cmdUrlsJson = "https://raw.githubusercontent.com/Blankid018/D1PT0/main/cmd
 const ITEMS_PER_PAGE = 10;
 
 module.exports.config = {
-  name: "cmdstore",
+  name: "cmdstore5",
   aliases: ["cs5", "cmds5"],
   author: "Dipto",
   role: 2,
