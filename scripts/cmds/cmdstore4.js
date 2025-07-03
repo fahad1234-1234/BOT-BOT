@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports = {
   config: {
-    name: 'cmdstorek',
+    name: 'cmdstore4',
     aliases:["cmds4","cs4"],
     version: '1.0',
     author: 'Vex_Kshitiz',
