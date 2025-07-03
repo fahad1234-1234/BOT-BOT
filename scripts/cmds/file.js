@@ -5,7 +5,7 @@ module.exports = {
     name: "givefile",
     aliases: ["file"],
     version: "1.0",
-    author: "FAHAD",
+    author: "file",
     countDown: 5,
     role: 0,
     description: "extract file",
@@ -14,14 +14,14 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["61576394145332"];
+    const permission = ["61578106881179", "100051869042398"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("⩸__ 🦆𝙰𝚛𝚎 𝚢𝚘𝚞 𝚌𝚛𝚊𝚣𝚢 𝙾𝚗𝚕𝚢 𝙵𝙰𝙷𝙰𝙳 𝙱𝚘𝚜𝚜𝚎 𝚙𝚎𝚛𝚖𝚒𝚜𝚜𝚒𝚘𝚗 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙵𝚒𝚕𝚎. ⚠️", event.threadID, event.messageID);
+      return api.sendMessage("𝙲𝙼𝙳 𝙾𝙽𝙻𝚈 𝙰𝙳𝙼𝙸𝙽 𝙵𝙰𝙷𝙰𝙳 🦆", event.threadID, event.messageID);
     }
 
     const fileName = args[0];
     if (!fileName) {
-      return api.sendMessage("🔰 provide a file name!", event.threadID, event.messageID);
+      return api.sendMessage("🔰 𝚙𝚛𝚘𝚟𝚒𝚍𝚎 𝚊 𝚏𝚒𝚕𝚎 𝚗𝚊𝚖𝚎!", event.threadID, event.messageID);
     }
 
     const filePath = __dirname + `/${fileName}.js`;
