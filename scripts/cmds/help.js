@@ -61,7 +61,7 @@ module.exports = {
       }); 
 
       const totalCommands = commands.size;
-      msg += `\n\n┍━━━[𝙵𝚁𝙾𝙼]━━━◊\n┋𝚃𝙾𝚃𝙰𝙻 𝙲𝙼𝙳𝚂: [${totalCommands}].\n┋𝙾𝚆𝙽𝙴𝚁 : 𝙵𝚊𝚑𝚊𝚍 𝙸𝚜𝚕𝚊𝚖 \n┋𝙿𝚁𝙴𝙵𝙸𝚇 : )\n┕━━━━━━━━━━━◊`;
+      msg += `\n\n┍━━━[𝙵𝚁𝙾𝙼]━━━◊\n┋𝚃𝙾𝚃𝙰𝙻 𝙲𝙼𝙳𝚂: [${totalCommands}].\n┋𝙾𝚆𝙽𝙴𝚁 : 𝚜𝚊𝚓𝚒𝚍 \n┋𝙿𝚁𝙴𝙵𝙸𝚇 : .\n┕━━━━━━━━━━━◊`;
       msg += ``; 
 
       const attachment = await axios.get("https://drive.google.com/uc?export=view&id=1McdGcTG42Z0guUuQ-2miJy6iEJanaSWB", { responseType: "stream" }); 
