@@ -9,7 +9,7 @@ const baseApiUrl = async () => {
 
 module.exports = {
   config: {
-    name: "poli2",
+    name: "poli",
     author: "Kire Author See?",
     version: "1.7",
     cooldowns: 10,
