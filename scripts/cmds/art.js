@@ -1,6 +1,6 @@
 const axios = require("axios");
 let Romim, download, send, apireq;
-let name = "art2";
+let name = "art";
 
 module.exports.config = {
   name: name,
